@@ -245,7 +245,7 @@ BEGIN
      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80'),
     (N'iPhone 15 Pro', 'PHONE-001', 28990000, 25, N'Điện thoại cao cấp', 'phone',
      'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80'),
-    (N'Galaxy S24', 'PHONE-002', 21990000, 30, N'Flagship Android', 'phone',
+    (N'Galaxy S24', 'PHONE-002', 21990000, 30, N'Android cao cấp', 'phone',
      'https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=800&q=80'),
     (N'MacBook Air M3', 'LAP-001', 28900000, 12, N'Laptop nhẹ, pin lâu', 'laptop',
      'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80'),
