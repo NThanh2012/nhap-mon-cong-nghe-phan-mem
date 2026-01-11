@@ -76,8 +76,14 @@ BEGIN
         Code VARCHAR(50) UNIQUE NOT NULL,
         DiscountType VARCHAR(20) NOT NULL,
         Value DECIMAL(18, 2) NOT NULL,
-        ExpiryDate DATE NOT NULL
+        ExpiryDate DATE NOT NULL,
+        IsActive BIT DEFAULT 1
     );
+END
+ELSE
+BEGIN
+    IF COL_LENGTH('Coupons', 'IsActive') IS NULL
+        ALTER TABLE Coupons ADD IsActive BIT DEFAULT 1;
 END
 GO
 

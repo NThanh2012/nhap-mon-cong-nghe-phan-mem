@@ -43,6 +43,15 @@ CREATE TABLE ShippingMethods (
     IsActive BIT DEFAULT 1
 );
 
+CREATE TABLE Coupons (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Code VARCHAR(50) UNIQUE NOT NULL,
+    DiscountType VARCHAR(20) NOT NULL,
+    Value DECIMAL(18, 2) NOT NULL,
+    ExpiryDate DATE NOT NULL,
+    IsActive BIT DEFAULT 1
+);
+
 CREATE TABLE SalesOrders (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     OrderCode VARCHAR(50) UNIQUE NOT NULL,
