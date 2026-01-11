@@ -1,7 +1,6 @@
 ﻿USE master;
 GO
 
--- 1. Nếu đã có database cũ thì xóa đi làm lại cho chuẩn
 IF EXISTS (SELECT * FROM sys.databases WHERE name = 'SalesOrderDB')
 BEGIN
     ALTER DATABASE SalesOrderDB SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
